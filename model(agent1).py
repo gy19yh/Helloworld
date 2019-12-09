@@ -17,17 +17,6 @@ def distance_between(agents_row_a, agents_row_b):
 
 a = agentframework.Agent()
 
-f = open("in.txt" , 'r')
-environment = []
-for row in f:
-    parsed_line = str.split(row,",")
-    rowlist = []
-    for value in parsed_line:
-        rowlist.append(float(value))
-    environment.append(rowlist)
-print(environment)
-
-
 num_of_agents = 10
 num_of_iterations = 100
 agents = []
@@ -45,17 +34,12 @@ for j in range(num_of_iterations):
 
 
 
-
-
-
-
-
 matplotlib.pyplot.xlim(0, 99)
 matplotlib.pyplot.ylim(0, 99)
 for i in range(num_of_agents):
     matplotlib.pyplot.scatter(agents[i].x,agents[i].y)
 
-matplotlib.pyplot.imshow(environment)
+
 matplotlib.pyplot.show()
 
 

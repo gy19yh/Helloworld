@@ -20,7 +20,7 @@ a = agentframework.Agent()
 num_of_agents = 10
 num_of_iterations = 100
 agents = []
-#f.close()
+
 
 # Make the agents.
 for i in range(num_of_agents):
